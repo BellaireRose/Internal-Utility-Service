@@ -31,6 +31,7 @@ def home():
 
 @app.route("/health")
 def health():
+    x=1 # flake8 will catch: E225 missing whitespace around operator
     return jsonify({"status": "UP"}), 200
 
 
